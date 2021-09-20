@@ -1,1 +1,13 @@
+public class AppleFactoryDemoTest
+{
+    public static void main(String[] args)
+    {
+        AppleFactory appleFactory = new AppleFactory();
 
+        AppleStoreUnit prod1 = appleFactory.getProduct("IPHONE");
+        prod1.produce();
+
+        AppleStoreUnit prod2 = appleFactory.getProduct("IPAD");
+        prod2.produce();
+    }
+}
